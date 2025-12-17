@@ -5,3 +5,52 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+
+.nav {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    display: flexbox;
+  
+
+
+.active {
+    background-color: #04AA6D;
+}
+
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
