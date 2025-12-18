@@ -6,9 +6,61 @@
     <title>Document</title>
 <link rel="stylesheet" href="./style/styles.css">
 </head>
+<style>
+
+.form-section {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding:  1em;
+}
+
+.form-section textarea {
+     width: 100%;
+     padding: 8px;
+     box-sizing: border-box;
+     font-size: 1rem;
+     margin-top: 4px;
+     border: 1px solid #ccc;
+     border-radius: 1em;
+}
+
+.form-section .summary-label {
+     display: block;
+     text-align: center;
+     color: rgb(13, 20, 20);
+     font-weight: 600;
+     margin: 0 0 8px 0;
+}
+
+.form-section button {
+     display: block;
+     margin: 12px auto;
+     padding: 10px 18px;
+     border-radius: 6px;
+     background-color: #04AA6D;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     font-size: 1rem;
+}
+
+.form-section button:hover {
+     opacity: 0.95;
+}
+
+</style>
+
 <body>
 
+<div style="max-width: 1800px; margin: auto; padding: 20px; background-color: black;">  
 
+<img src="./images/pexels-vanmalidate-769289.jpg" alt="Image" width="600px " height="auto" style="display: block; margin: auto; border-radius: 10px;">
+
+</div>  
 <div class="nav">    
 <ul>
    <li><a href="./index.html">Home</a></li>
@@ -27,26 +79,43 @@
             <form action="/submit_form" method="post">
                 <label for="FirstName">First Name:</label>
                 <input type="text" id="FirstName" name="FirstName" required placeholder="Enter Your First Name">
-                     <br>
+                     <br> <br>
                 <label for="LastName">Last Name:</label>
                 <input type="text" id="LastName" name="LastName" required placeholder="Enter Your Last Name">
-                     <br>
+                     <br>                     <br>
                 <label for="Email">Email:</label>
                 <input type="email" id="Email" name="Email" required placeholder="Enter Your Email">
-                     <br>
+                     <br>                     <br>
                 <label for="Password">Password:</label>
                 <input type="password" id="Password" name="Password" required placeholder="Enter Your Password">
-                     <br>
+                     <br>                      <br>
                 <label for="ConfirmPassword">Confirm Password:</label>
                 <input type="password" id="ConfirmPassword" name="ConfirmPassword" required placeholder="Confirm Your Password">
-                     <br>
+                     <br>                      <br>
                 <label> Gender:</label>
                 <input type="radio" id="Male" name="Gender" value="Male" required>
                 <label for="Male">Male</label>
                 <input type="radio" id="Female" name="Gender" value="Female" required>
                 <label for="Female">Female</label>
                 <br>
-                <button type="submit">Register</button>
+                <br>
+<label for="Contact">Contact Method:</label>
+
+<select name="method" id="method" required>
+  <option value="email">Email</option>
+  <option value="phone">Phone</option>
+    <option value="mail">Mail</option>
+    <option value="sms">SMS</option>
+</select>
+
+
+                
+<br>
+<br>
+                <label class="summary-label" for="Summary">Summary:</label>
+                <textarea id="Summary" name="Summary" required placeholder="Tell us about yourself" rows="5" maxlength="1000"></textarea>
+                <br>
+                <button type="submit" style="display: block; text-align: center;">Register</button>
                 <br>
             
             </form>

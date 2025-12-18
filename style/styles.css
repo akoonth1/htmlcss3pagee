@@ -3,6 +3,7 @@ body {
     background-color: #dd7474;
     font-family: Arial, sans-serif;
     margin: 0;
+    /* background-image: url('../images/pexels-chanwalrus-958545.jpg'); */
 
 }
 
@@ -28,7 +29,7 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    display: flex;
+    display: flexbox;
 }
 
 .nav a:hover {
@@ -43,7 +44,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 0.25rem;
+    gap: 1.25rem;
     align-items: center;
 }
 
@@ -67,10 +68,40 @@ body {
 }
 
 ul {
-    display: flex;
+    display: flexbox;
     /* gap: 2em; */
     background-color: rgb(133, 149, 45);
     list-style: none;
     overflow: hidden;
     
 }
+
+.newtable {
+    width: 50%;
+    border: 2px solid black;
+    margin: 25px auto; 
+    text-align: left;
+    border-color: black;
+}
+
+.newtable th, .newtable td {
+    border: 2px solid black;
+    padding: 12px 15px;
+    border-color: black;
+}
+
+
+.newtable table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}   
