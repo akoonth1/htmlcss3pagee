@@ -11,6 +11,26 @@ body {
 .nav {
     background-color: blueviolet;
     display: flex;
+
+/* Header image helpers: force a full-width header image
+   - Targets `body > img:first-child` and images with `.header-img` class
+   - Scales/crops images to a fixed header height so nav sits below visually
+   - If you place the image before the `.nav` element it will appear above the nav */
+.header-img,
+body > img:first-child {
+    display: block;
+    width: 100%;
+    height: 220px; /* header height — adjust if you want taller/shorter */
+    object-fit: cover; /* preserves aspect ratio, crops to fill */
+    object-position: center;
+    margin: 0;
+}
+
+/* Ensure the nav remains visually above page content when needed */
+.nav {
+    position: relative;
+    z-index: 10;
+}
     justify-content: space-around;
     align-items: center;
     height: 50px;
