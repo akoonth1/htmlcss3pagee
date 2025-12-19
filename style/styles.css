@@ -9,7 +9,7 @@ body {
 
 
 .nav {
-    background-color: blueviolet;
+    background-color: rgb(51, 92, 208);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,7 +97,6 @@ ul {
     border-collapse: collapse;
 }
 
-/* Menu-style rows: make table rows behave like clickable menu items */
 .newtable tbody tr[data-href] {
     cursor: pointer;
     transition: background-color 0.12s ease;
@@ -120,3 +119,54 @@ ul {
     object-fit: cover;
     background-color: white;
 }   
+
+
+.float-left, .float-right {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.float-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+@media (max-width: 640px) {
+    .float-left, .float-right {
+        float: none;
+        margin: 0 0 1rem 0;
+        max-width: 100%;
+    }
+}
+
+
+#floating-img {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    max-width: 1080;
+    overflow: auto;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.content .float-left {
+    max-width: 45%;
+}
+
+.content .float-right {
+    max-width: 45%;
+}
